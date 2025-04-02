@@ -1,0 +1,73 @@
+﻿art {
+    box-shadow: 0 1rem 1rem rgba($blk,.3);
+    width: 95rem;
+    aspect-ratio: 1/1;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: .5rem;
+    background: linear-gradient(rgba($blk,.05), $none) $wht;
+    overflow: hidden;
+
+    u:nth-of-type(1) {
+        background: $blue;
+        width: 22rem;
+        height: 30rem;
+        transform: translate3d(0, 68rem,0);
+        z-index: -1;
+    }
+
+    u:nth-of-type(2) {
+        background: $blk;
+        width: 3rem;
+        height: 100%;
+        transform: translate3d(21rem, 0,0);
+    }
+
+    u:nth-of-type(3) {
+        background: $blk;
+        width: 22rem;
+        height: 6rem;
+        transform: translate3d(0, 28rem,0);
+    }
+
+    u:nth-of-type(4) {
+        background: $blk;
+        width: 100%;
+        height: 3rem;
+        transform: translate3d(0, 68rem,0);
+        z-index: 1;
+    }
+
+    u:nth-of-type(5) {
+        background: $blk;
+        width: 3rem;
+        height: 30rem;
+        transform: translate3d(85rem, 68rem,0);
+        z-index: 1;
+    }
+
+    u:nth-of-type(6) {
+        background: $blk;
+        width: 10rem;
+        height: 4.5rem;
+        transform: translate3d(85rem, 81rem,0);
+        z-index: 1;
+    }
+
+    u:nth-of-type(7) {
+        background: yellow;
+        width: 7rem;
+        height: 10rem;
+        transform: translate3d(88rem, 85rem,0);
+        z-index: 1;
+    }
+
+    u:nth-of-type(8) {
+        background: red;
+        width: 71rem;
+        height: 68rem;
+        transform: translate3d(24rem, 0rem,0);
+        z-index: 1;
+    }
+}

@@ -1,0 +1,42 @@
+﻿.sig {
+    &, * {
+        height: 9.25em;
+        overflow: hidden;
+        border-radius: .5em;
+    }
+
+    position: absolute;
+    left: auto;
+    right: 1rem;
+    bottom: .4rem;
+    font-size: 1rem;
+    color: $blk;
+    width: 10em;
+    transform: skewX(10deg) scaleY(.45) rotate(2deg);
+    /* mix-blend-mode: difference;*/
+
+    &:before, *:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5em;
+        height: 5em;
+        background: currentColor;
+        transform: translate3d(-2.5em,0,0) rotate(-45deg);
+        box-shadow: -3em 3em 0 0 currentColor;
+        border-radius: .5em 2em .5em 2em;
+    }
+
+    * {
+        width: 5em;
+        transform: translate3d(3.75em,0,0) scaleY(.95);
+        display: block !important;
+
+        &:before {
+            transform: translate3d(-3em,-2em,0) rotate(-45deg);
+            box-shadow: -3em 3em 0 0 currentColor, -6em 6em 0 0 currentColor;
+            border-radius: .5em;
+        }
+    }
+}

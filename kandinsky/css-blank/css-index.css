@@ -1,0 +1,330 @@
+html, body, div {
+  height: 100%;
+  margin: 0; }
+
+html {
+  font-size: 1vmin; }
+
+body {
+  margin: 0; }
+
+div {
+  background: linear-gradient(beige, #e3bab9); }
+
+body > div *, body > div *:before, body > div *:after, body > div:before, body > div:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-style: preserve-3d; }
+
+body.pic div:after {
+  background: url("../imgs/boat.jpg") no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  opacity: .5; }
+
+art {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  width: 95rem;
+  aspect-ratio: 1/1;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: .5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0)) #fff;
+  overflow: hidden; }
+  art > u:nth-of-type(1) {
+    background: #1a4e6d;
+    width: 7rem;
+    height: 7rem;
+    transform: translate3d(6.5rem, 39.5rem, 0) rotate(-11deg) skewX(57deg);
+    border: 1.5rem solid #11071b;
+    border-radius: 15px; }
+  art > x:nth-of-type(1) {
+    background: #81170b;
+    width: 3rem;
+    height: 3rem;
+    transform: translate3d(10rem, 41.5rem, 0) rotate(22deg) skewX(-57deg);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 10px #81170b, 0 10px 5px 0 #df7514; }
+  art > u:nth-of-type(2) {
+    background: #1a4e6d;
+    width: 10rem;
+    height: 5rem;
+    transform: translate3d(3rem, 34rem, 0) rotate(25deg) skewX(45deg);
+    border: 1.5rem solid #11071b;
+    border-radius: 15px;
+    z-index: -1; }
+  art > x:nth-of-type(2) {
+    background: #81170b;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate3d(7.5rem, 36rem, 0) rotate(69deg) skewX(-45deg);
+    border-radius: 2px;
+    box-shadow: 0 0 5px 10px #81170b; }
+  art > u:nth-of-type(3) {
+    background: #12374c;
+    width: 8rem;
+    height: 4rem;
+    transform: translate3d(4.5rem, 29rem, 0) rotate(28deg) skewX(50deg);
+    border: 1rem solid #11071b;
+    border-radius: 15px;
+    z-index: -2; }
+  art > x:nth-of-type(3) {
+    background: #81170b;
+    width: 1rem;
+    height: 1rem;
+    transform: translate3d(7.5rem, 30rem, 0);
+    border-radius: 50%; }
+    art > x:nth-of-type(3):before {
+      background: #df7514;
+      width: 1rem;
+      height: 1rem;
+      transform: translate3d(-0.5rem, -1rem, 0);
+      border-radius: 50%; }
+    art > x:nth-of-type(3):after {
+      background: #11071b;
+      width: 8rem;
+      height: 5rem;
+      transform: translate3d(0.5rem, 1rem, 0) skewX(60deg); }
+  art > u:nth-of-type(4) {
+    background: #1a4e6d;
+    width: 5rem;
+    height: 5rem;
+    transform: translate3d(7rem, 25rem, 0) rotate(35deg) skewX(35deg);
+    border: 1rem solid #11071b;
+    border-radius: 10px;
+    z-index: -3; }
+  art > u:nth-of-type(5) {
+    background: white;
+    width: 5rem;
+    height: 19.2rem;
+    transform: translate3d(12rem, 25rem, 0) rotate(25deg) skewX(28deg);
+    border-radius: 10px;
+    border-left: 1rem solid #11071b;
+    border-top: 3rem solid #11071b;
+    border-bottom: 1rem solid #11071b;
+    z-index: 1; }
+  art > u:nth-of-type(6) {
+    background: white;
+    width: 4.8rem;
+    height: 19.2rem;
+    transform: translate3d(16rem, 24rem, 0) rotate(25deg) skewX(28deg);
+    border-radius: 10px;
+    border-left: 1rem solid #11071b;
+    border-top: 2rem solid #11071b;
+    z-index: 1; }
+  art > u:nth-of-type(7) {
+    background: white;
+    width: 21rem;
+    height: 21rem;
+    transform: translate3d(15.5rem, 27.7rem, 0) rotate(0deg) skewX(0deg);
+    z-index: 1; }
+    art > u:nth-of-type(7):after {
+      background: white;
+      width: 10rem;
+      height: 5rem;
+      transform: translate3d(5.5rem, -3rem, 0);
+      z-index: 999; }
+  art > u:nth-of-type(8) {
+    background: white;
+    width: 12rem;
+    height: 5rem;
+    transform: translate3d(18rem, 18.7rem, 0) rotate(24deg) skewX(28deg);
+    border-radius: 10px;
+    border-top: 3rem solid #11071b;
+    border-left: 2rem solid #11071b;
+    border-right: 3rem solid #11071b;
+    z-index: 1; }
+  art > u:nth-of-type(9) {
+    background: white;
+    width: 6rem;
+    height: 5rem;
+    transform: translate3d(23rem, 16rem, 0) rotate(90deg) skewX(28deg);
+    border-radius: 10px;
+    border-top: 2rem solid #11071b;
+    border-left: 3rem solid #11071b;
+    z-index: 1; }
+  art > u:nth-of-type(10) {
+    background: #100a5f;
+    width: 13rem;
+    height: 18rem;
+    transform: translate3d(20rem, 28rem, 0) rotate(25deg) skewX(15deg);
+    border-radius: 20px;
+    border-top: 1rem solid #000;
+    border-left: 1rem solid #000;
+    z-index: 2; }
+  art > x:nth-of-type(4) {
+    background: white;
+    width: 2rem;
+    height: 2rem;
+    transform: translate3d(24rem, 30rem, 0);
+    box-shadow: 0 0 5px 2px white;
+    border-radius: 50%;
+    z-index: 4; }
+  art > x:nth-of-type(5) {
+    background: white;
+    width: 4rem;
+    height: 4rem;
+    transform: translate3d(26.5rem, 32rem, 0);
+    box-shadow: 0 0 5px 2px white;
+    border-radius: 50%;
+    z-index: 4; }
+  art > x:nth-of-type(6) {
+    background: white;
+    width: 3rem;
+    height: 3rem;
+    transform: translate3d(23.3rem, 39rem, 0);
+    box-shadow: 0 0 5px 2px white;
+    border-radius: 50%;
+    z-index: 4; }
+  art > x:nth-of-type(7) {
+    background: white;
+    width: 3rem;
+    height: 3rem;
+    transform: translate3d(28rem, 39.5rem, 0);
+    box-shadow: 0 0 5px 2px white;
+    border-radius: 50%;
+    z-index: 4; }
+  art > u:nth-of-type(11) {
+    background: #e3bab9;
+    width: 2.7rem;
+    height: 3.5rem;
+    transform: translate3d(32rem, 29rem, 0) rotate(70deg) skewX(15deg);
+    border-radius: 50%;
+    border: 1rem solid #11071b;
+    z-index: 3; }
+  art > u:nth-of-type(12) {
+    background: #ca000e;
+    width: 5rem;
+    height: 18rem;
+    transform: translate3d(34rem, 33rem, 0) rotate(-20deg) skewX(10deg);
+    border-radius: 80% 0 0 100%;
+    z-index: 3; }
+  art > u:nth-of-type(13) {
+    background: #11071b;
+    width: 2rem;
+    height: 1rem;
+    transform: translate3d(19.5rem, 44.5rem, 0);
+    border-radius: 100% 0 100% 0;
+    z-index: 1; }
+  art > u:nth-of-type(14) {
+    background: #50464b;
+    width: 7rem;
+    height: 7rem;
+    transform: translate3d(17.5rem, 44.8rem, 0) rotate(-33deg) skewX(33deg);
+    border-radius: 7px;
+    z-index: 1; }
+  art > u:nth-of-type(15) {
+    background: white;
+    width: 3rem;
+    height: 3rem;
+    transform: translate3d(23.5rem, 46.5rem, 0);
+    border-radius: 50%;
+    z-index: 1; }
+  art > u:nth-of-type(16) {
+    background: #df7514;
+    width: 5rem;
+    height: 8rem;
+    transform: translate3d(14.5rem, 36.5rem, 0) skewX(30deg);
+    border-radius: 50% 70% 0 5px;
+    box-shadow: 0 0 5px 2px black;
+    z-index: 1; }
+  art > u:nth-of-type(17) {
+    background: #bf5016;
+    width: 4rem;
+    height: 7rem;
+    transform: translate3d(15.5rem, 30.5rem, 0) skewX(30deg);
+    border-radius: 50% 70% 0 5px;
+    box-shadow: 0 0 5px 2px black;
+    z-index: 1; }
+  art > u:nth-of-type(18) {
+    background: #c02c10;
+    width: 3rem;
+    height: 5rem;
+    transform: translate3d(18.5rem, 26.5rem, 0) skewX(29deg);
+    border-radius: 50% 70% 0 5px;
+    box-shadow: 0 0 5px 2px black;
+    z-index: 1; }
+  art > u:nth-of-type(19) {
+    background: #11071b;
+    width: 7.2rem;
+    height: 2rem;
+    transform: translate3d(13.7rem, 46.2rem, 0) skewX(0deg) skewY(0deg) rotate(0deg);
+    border-radius: 0 100% 0 0;
+    z-index: 1; }
+  art > x:nth-of-type(8) {
+    background: white;
+    width: 3rem;
+    height: 3rem;
+    transform: translate3d(15rem, 45rem, 0);
+    border-radius: 50%;
+    z-index: 4; }
+  art > x:nth-of-type(9) {
+    background: white;
+    width: 3rem;
+    height: 3rem;
+    transform: translate3d(15rem, 45rem, 0);
+    border-radius: 50%;
+    z-index: 4; }
+  art > u:nth-of-type(20) {
+    background: #11071b;
+    width: 7.2rem;
+    height: 2rem;
+    transform: translate3d(13.7rem, 46.2rem, 0);
+    border-radius: 0 100% 0 0;
+    z-index: 1; }
+  art g:nth-of-type(1) {
+    transform: translate3d(32.7rem, 43.2rem, 0) rotate(35deg) scale(0.8);
+    z-index: 999; }
+  art g > u:nth-of-type(1) {
+    background: #7b000f;
+    width: 3rem;
+    height: 12rem;
+    transform: translate3d(0rem, 0rem, 0) skewX(10deg);
+    z-index: 1; }
+  art g > u:nth-of-type(2) {
+    background: #7b000f;
+    width: 6rem;
+    height: 16rem;
+    transform: translate3d(-3rem, 0rem, 0) skewX(-10deg);
+    border-radius: 0 100% 0 0;
+    z-index: 1; }
+
+.sig {
+  position: absolute;
+  left: auto;
+  right: 1rem;
+  bottom: .4rem;
+  font-size: 1rem;
+  color: #000;
+  width: 10em;
+  transform: skewX(10deg) scaleY(0.45) rotate(2deg);
+  /* mix-blend-mode: difference;*/ }
+  .sig, .sig * {
+    height: 9.25em;
+    overflow: hidden;
+    border-radius: .5em; }
+  .sig:before, .sig *:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5em;
+    height: 5em;
+    background: currentColor;
+    transform: translate3d(-2.5em, 0, 0) rotate(-45deg);
+    box-shadow: -3em 3em 0 0 currentColor;
+    border-radius: .5em 2em .5em 2em; }
+  .sig * {
+    width: 5em;
+    transform: translate3d(3.75em, 0, 0) scaleY(0.95);
+    display: block !important; }
+    .sig *:before {
+      transform: translate3d(-3em, -2em, 0) rotate(-45deg);
+      box-shadow: -3em 3em 0 0 currentColor, -6em 6em 0 0 currentColor;
+      border-radius: .5em; }
+
+/*# sourceMappingURL=css-index.css.map */
