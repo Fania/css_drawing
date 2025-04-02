@@ -339,15 +339,15 @@
       z-index: 1;
     }
     > u:nth-of-type(25) {
-      background: linear-gradient(135deg, $goldlight, $golddark, $goldlight, $golddark);
-      width: 29rem;
-      height: 42rem;
-      transform: translate3d(37rem, 5rem, 0) rotate(-16deg) skewX(5deg);
-      border-radius: 0 10% 100% 0;
+      background: linear-gradient(135deg, $offwhite 5%, $goldlight 15%, $offwhite 30% 55%, $goldlight 70%);
+      width: 23rem;
+      height: 40rem;
+      transform: translate3d(38rem, 6rem, 0) rotate(-21deg) skewX(-8deg);
+      border-radius: 0 2rem 100% 0;
       border-top: 1rem solid black;
       border-left: 1rem solid black;
       box-shadow: 0 0 1rem 0.5rem rgba(0,0,0,0.5);
-      z-index: 1;
+      z-index: 2;
     }
     > u:nth-of-type(26) {
       background: $brightred;
@@ -402,6 +402,14 @@
       border: 0.7rem solid black;
       z-index: 2;
     }
+    > x:nth-of-type(10) {
+      background: black;
+      width: 5rem;
+      height: 8rem;
+      transform: translate3d(54.8rem, 41.5rem, 0);
+      border-radius: 100% 0 0 0;
+      z-index: -1;
+    }
     > u:nth-of-type(31) {
       background: linear-gradient(to bottom, $purple, $lilac);
       width: 5rem;
@@ -427,7 +435,7 @@
       height: 12rem;
       transform: translate3d(59.5rem, 46rem, 0) rotate(20deg);
       border-radius: 0 100% 100% 0;
-      z-index: 1;
+      z-index: 2;
     }
     > u:nth-of-type(34) {
       background: $darkblue;
@@ -446,6 +454,173 @@
       border: 1rem solid $darkblue;
       z-index: 1;
     }
+    > u:nth-of-type(36) {
+      background: $lightblue;
+      width: 3rem;
+      height: 5.2rem;
+      transform: translate3d(68.5rem, 45rem, 0) rotate(30deg);
+      border-radius: 0 100% 0 0;
+      border: 1rem solid $darkblue;
+      z-index: 1;
+    }
+    > u:nth-of-type(37) {
+      background: $offwhite;
+      width: 4rem;
+      height: 4rem;
+      transform: translate3d(71rem, 48.8rem, 0);
+      border-radius: 50%;
+      border: 1rem solid $darkblue;
+      z-index: 1;
+    }
+    > u:nth-of-type(38) {
+      background: linear-gradient(to bottom, white, $offwhite);
+      width: 1.5rem;
+      height: 8.5rem;
+      transform: translate3d(77.2rem, 42.5rem, 0) rotate(47deg);
+      border-top: 1rem solid $darkblue;
+      border-left: 1rem solid $darkblue;
+      border-right: 1rem solid $darkblue;
+      box-shadow: 0 0 0.7rem 0.4rem $lightblue;
+      z-index: 1;
+    }
+    > u:nth-of-type(39) {
+      background: $maroon;
+      width: 11rem;
+      height: 10rem;
+      transform: translate3d(63rem, 50.5rem, 0) rotate(27deg);
+      border-radius: 1rem;
+      z-index: 1;
+    }
+    > u:nth-of-type(40) {
+      background: $darkblue;
+      width: 4rem;
+      height: 2rem;
+      transform: translate3d(64.8rem, 48rem, 0);
+      z-index: 1;
+    }
+    > u:nth-of-type(41) {
+      background: $gray;
+      width: 3rem;
+      height: 3.5rem;
+      transform: translate3d(74rem, 54.2rem, 0) rotate(20deg);
+      border: 0.7rem solid $darkblue;
+      border-radius: 0 0 100% 0;
+      z-index: 1;
+    }
+    > u:nth-of-type(42) {
+      background: $gray;
+      width: 6rem;
+      height: 6.5rem;
+      transform: translate3d(76rem, 55.8rem, 0) rotate(23deg);
+      border: 0.7rem solid $darkblue;
+      border-radius: 0 0 100% 0;
+      z-index: 1;
+    }
+    > u:nth-of-type(43) {
+      background: $lightgray;
+      width: 2rem;
+      height: 3rem;
+      transform: translate3d(72rem, 55.8rem, 0) rotate(23deg);
+      border: 0.7rem solid $darkblue;
+      border-radius: 0 0 100% 0;
+      z-index: 1;
+    }
+    > u:nth-of-type(44) {
+      background: $lightblue;
+      width: 2rem;
+      height: 4rem;
+      transform: translate3d(71rem, 58.8rem, 0) rotate(27deg);
+      border-radius: 0 100% 0 0;
+      border-top: 0.7rem solid $darkblue;
+      border-right: 1rem solid $darkblue;
+      z-index: 1;
+    }
+    > u:nth-of-type(45) {
+      background: $lightgray;
+      width: 6rem;
+      height: 8rem;
+      transform: translate3d(72rem, 56.8rem, 0) rotate(23deg);
+      z-index: -1;
+    }
+    > u:nth-of-type(46) {
+      background: $darkblue;
+      width: 8rem;
+      height: 10rem;
+      transform: translate3d(77rem, 56.8rem, 0) rotate(23deg);
+      z-index: -1;
+    }
+    > u:nth-of-type(47) {
+      background: $offwhite;
+      width: 5rem;
+      height: 3rem;
+      transform: translate3d(84.8rem, 60rem, 0) rotate(30deg);
+      border: 0.5rem solid $darkblue;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    > u:nth-of-type(48) {
+      background: $brightblue;
+      width: 6rem;
+      height: 2rem;
+      transform: translate3d(74.8rem, 62rem, 0) rotate(-38deg);
+      border: 0.5rem solid $darkblue;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    > u:nth-of-type(49) {
+      background: $maroon;
+      width: 3.5rem;
+      height: 2.5rem;
+      transform: translate3d(77.8rem, 64rem, 0) rotate(-38deg);
+      border: 0.5rem solid $darkblue;
+      border-radius: 2rem;
+      z-index: 1;
+    }
+    > u:nth-of-type(50) {
+      background: $offwhite;
+      width: 2rem;
+      height: 5rem;
+      transform: translate3d(81.8rem, 64rem, 0) rotate(62deg);
+      border: 0.5rem solid $darkblue;
+      border-radius: 0 100% 0 0;
+      z-index: -1;
+    }
+    > u:nth-of-type(51) {
+      background: transparent;
+      width: 23rem;
+      height: 1rem;
+      transform: translate3d(69.8rem, 48rem, 0) rotate(46deg);
+      border-top: 1rem solid $darkblue;
+      border-radius: 80%;
+      z-index: 1;
+    }
+    > u:nth-of-type(52) {
+      background: transparent;
+      width: 11rem;
+      height: 1rem;
+      transform: translate3d(72.8rem, 48rem, 0) rotate(39deg);
+      border-top: 1rem solid $darkblue;
+      border-radius: 80%;
+      z-index: 1;
+    }
+    > u:nth-of-type(53) {
+      background: transparent;
+      width: 9rem;
+      height: 1rem;
+      transform: translate3d(76.8rem, 45rem, 0) rotate(46deg);
+      border-top: 1rem solid $darkblue;
+      border-radius: 80%;
+      z-index: 1;
+    }
+    // > u:nth-of-type(54) {
+    //   background: transparent;
+    //   width: 9rem;
+    //   height: 1rem;
+    //   transform: translate3d(76.8rem, 45rem, 0) rotate(46deg);
+    //   border-top: 1rem solid $darkblue;
+    //   border-radius: 80%;
+    //   z-index: 1;
+    // }
 
 
 
