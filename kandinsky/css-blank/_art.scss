@@ -6,9 +6,8 @@
     bottom: 0;
     margin: auto;
     border-radius: .5rem;
-    background: linear-gradient(rgba($blk,.05), $none) $wht;
+    background: white;
     overflow: hidden;
-
     > u:nth-of-type(1) {
       background: $triangleblue;
       width: 7rem;
@@ -16,7 +15,6 @@
       transform: translate3d(6.5rem, 39.5rem, 0) rotate(-11deg) skewX(57deg);
       border: 1.5rem solid $darkblue;
       border-radius: 3rem;
-      //             inset 3rem 0 5px $triangleblue;
     }
     > x:nth-of-type(1) {
       background: $trianglered;
@@ -27,7 +25,6 @@
       box-shadow: 0 0 1rem 2rem $trianglered,
                   0 2rem 1rem 0 $goldlight;
     }
-
     > u:nth-of-type(2) {
       background: $triangleblue;
       width: 10rem;
@@ -45,7 +42,6 @@
       border-radius: 0.5rem;
       box-shadow: 0 0 1rem 0.5rem $trianglered;
     }
-
     > u:nth-of-type(3) {
       background: rgb(18, 55, 76);
       width: 8rem;
@@ -75,7 +71,6 @@
         transform: translate3d(0.5rem, 1rem, 0) skewX(60deg);
       }
     }
-
     > u:nth-of-type(4) {
       background: $triangleblue;
       width: 5rem;
@@ -86,7 +81,6 @@
       z-index: -3;
     }
     > u:nth-of-type(5) {
-      // background: $triangleblue;
       background: white;
       width: 5rem;
       height: 19.2rem;
@@ -693,8 +687,10 @@
       width: 26rem;
       height: 15rem;
       transform: translate3d(54.2rem, 71.5rem, 0) rotate(-26deg) skewX(17deg);
-      border-bottom: 1rem solid $darkblue;
-      z-index: -2;
+      border-bottom: 1rem solid rgb(12, 5, 40);
+      border-radius: 0 100% 0 0;
+      filter: blur(5px);
+      z-index: -1;
     }
     > u:nth-of-type(60) {
       background: white;
@@ -809,9 +805,39 @@
       border: 0.5rem solid $darkblue;
       z-index: 1;
     }
-    
-
-
-
-
+    > u:nth-of-type(72) {
+      background: linear-gradient(to right, black, $purple, $lilac);
+      width: 25rem;
+      height: 9rem;
+      transform: translate3d(26.5rem, 64.5rem, 0) rotate(44deg) skewX(-10deg);
+      border: 1rem solid $darkblue;
+      border-radius: 0 0 100% 0;
+      z-index: -1;
+      &:after {
+        background: $offwhite;
+        width: 1rem;
+        height: 7rem;
+        transform: translate3d(13rem, -2.5rem, 0) rotate(90deg);
+        filter: blur(3px);
+        z-index: 1;
+      }
+    }
+    > u:nth-of-type(73) {
+      background: linear-gradient(to top, black, $purple, $lilac);
+      width: 29rem;
+      height: 33rem;
+      transform: translate3d(36.5rem, 54.5rem, 0) rotate(-30deg);
+      border: 1rem solid $darkblue;
+      border-radius: 50%;
+      z-index: -2;
+      &:after {
+        background: white;
+        width: 29rem;
+        height: 33rem;
+        transform: translate3d(4rem, 3rem, 0) rotate(20deg);
+        border-radius: 50%;
+        border-left: 1rem solid $darkblue;
+        z-index: -1;
+      }
+    }
 }

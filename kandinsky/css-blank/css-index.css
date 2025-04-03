@@ -12,7 +12,7 @@ body {
 }
 
 div {
-  background: linear-gradient(beige, rgb(227, 186, 185));
+  background: linear-gradient(rgb(233, 187, 106), rgb(15, 35, 59));
 }
 
 body > div *, body > div *:before, body > div *:after, body > div:before, body > div:after {
@@ -23,14 +23,6 @@ body > div *, body > div *:before, body > div *:after, body > div:before, body >
   transform-style: preserve-3d;
 }
 
-body.pic div:after {
-  background: url("../imgs/boat.jpg") no-repeat center;
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-}
-
 art {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
   width: 95rem;
@@ -39,7 +31,7 @@ art {
   bottom: 0;
   margin: auto;
   border-radius: 0.5rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0)) #fff;
+  background: white;
   overflow: hidden;
 }
 art > u:nth-of-type(1) {
@@ -720,7 +712,9 @@ art > u:nth-of-type(59) {
   height: 15rem;
   transform: translate3d(54.2rem, 71.5rem, 0) rotate(-26deg) skewX(17deg);
   border-bottom: 1rem solid rgb(12, 5, 40);
-  z-index: -2;
+  border-radius: 0 100% 0 0;
+  filter: blur(5px);
+  z-index: -1;
 }
 art > u:nth-of-type(60) {
   background: white;
@@ -834,4 +828,39 @@ art > u:nth-of-type(71) {
   transform: translate3d(13rem, 75.7rem, 0) rotate(30deg);
   border: 0.5rem solid rgb(12, 5, 40);
   z-index: 1;
+}
+art > u:nth-of-type(72) {
+  background: linear-gradient(to right, black, rgb(59, 14, 81), rgb(79, 73, 161));
+  width: 25rem;
+  height: 9rem;
+  transform: translate3d(26.5rem, 64.5rem, 0) rotate(44deg) skewX(-10deg);
+  border: 1rem solid rgb(12, 5, 40);
+  border-radius: 0 0 100% 0;
+  z-index: -1;
+}
+art > u:nth-of-type(72):after {
+  background: rgb(233, 187, 106);
+  width: 1rem;
+  height: 7rem;
+  transform: translate3d(13rem, -2.5rem, 0) rotate(90deg);
+  filter: blur(3px);
+  z-index: 1;
+}
+art > u:nth-of-type(73) {
+  background: linear-gradient(to top, black, rgb(59, 14, 81), rgb(79, 73, 161));
+  width: 29rem;
+  height: 33rem;
+  transform: translate3d(36.5rem, 54.5rem, 0) rotate(-30deg);
+  border: 1rem solid rgb(12, 5, 40);
+  border-radius: 50%;
+  z-index: -2;
+}
+art > u:nth-of-type(73):after {
+  background: white;
+  width: 29rem;
+  height: 33rem;
+  transform: translate3d(4rem, 3rem, 0) rotate(20deg);
+  border-radius: 50%;
+  border-left: 1rem solid rgb(12, 5, 40);
+  z-index: -1;
 }/*# sourceMappingURL=css-index.css.map */
