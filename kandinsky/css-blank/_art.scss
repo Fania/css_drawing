@@ -851,6 +851,14 @@
         z-index: -1;
       }
     }
+    > u:nth-of-type(74) {
+      background: $darkblue;
+      width: 27rem;
+      height: 1rem;
+      transform: translate3d(59.5rem, 84.5rem, 0) rotate(-25deg);
+      z-index: 1;
+    }
+
 
 
     @keyframes rowHead { // 11

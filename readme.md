@@ -34,3 +34,11 @@ moon: 27
 
 sail: 25
 
+
+
+Issues:
+
+- [ ] move rower body to the back into boat, but in front of sail and luggage?
+
+
+<!-- 73/10/2 -->

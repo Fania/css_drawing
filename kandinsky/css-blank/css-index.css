@@ -872,6 +872,13 @@ art > u:nth-of-type(73):after {
   border-left: 1rem solid rgb(12, 5, 40);
   z-index: -1;
 }
+art > u:nth-of-type(74) {
+  background: rgb(12, 5, 40);
+  width: 27rem;
+  height: 1rem;
+  transform: translate3d(59.5rem, 84.5rem, 0) rotate(-25deg);
+  z-index: 1;
+}
 @keyframes rowHead {
   to {
     transform: translate3d(42rem, 31rem, 0) rotate(85deg) skewX(15deg);
