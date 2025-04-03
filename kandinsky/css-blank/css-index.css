@@ -31,7 +31,7 @@ art {
   bottom: 0;
   margin: auto;
   border-radius: 0.5rem;
-  background: white;
+  background: #eef;
   overflow: hidden;
 }
 art > u:nth-of-type(1) {
@@ -128,7 +128,7 @@ art > u:nth-of-type(6) {
 }
 art > u:nth-of-type(7) {
   background: white;
-  width: 21rem;
+  width: 17rem;
   height: 21rem;
   transform: translate3d(15.5rem, 27.7rem, 0) rotate(0deg) skewX(0deg);
   z-index: 1;
@@ -696,7 +696,7 @@ art > u:nth-of-type(56) {
   z-index: -2;
 }
 art > u:nth-of-type(57) {
-  background: linear-gradient(to right, white, rgb(191, 80, 22));
+  background: linear-gradient(to right, #eef, rgb(191, 80, 22));
   width: 47rem;
   height: 19rem;
   transform: translate3d(42rem, 79rem, 0);
@@ -714,7 +714,7 @@ art > u:nth-of-type(58) {
   z-index: -2;
 }
 art > u:nth-of-type(59) {
-  background: linear-gradient(180deg, rgb(110, 112, 135), white);
+  background: linear-gradient(180deg, rgb(110, 112, 135), #eef);
   width: 26rem;
   height: 15rem;
   transform: translate3d(54.2rem, 71.5rem, 0) rotate(-26deg) skewX(17deg);
@@ -724,7 +724,7 @@ art > u:nth-of-type(59) {
   z-index: -1;
 }
 art > u:nth-of-type(60) {
-  background: white;
+  background: #eef;
   width: 34rem;
   height: 20rem;
   transform: translate3d(50rem, 59rem, 0);
@@ -864,7 +864,7 @@ art > u:nth-of-type(73) {
   z-index: -2;
 }
 art > u:nth-of-type(73):after {
-  background: white;
+  background: #eef;
   width: 29rem;
   height: 33rem;
   transform: translate3d(4rem, 3rem, 0) rotate(20deg);
