@@ -356,6 +356,13 @@ art > u:nth-of-type(23) {
   box-shadow: inset 8rem -0.5rem 0 3rem rgb(16, 10, 95), inset 1rem -0.5rem 0 3rem rgb(16, 10, 95);
   z-index: 1;
 }
+art > u:nth-of-type(23):after {
+  background: rgb(16, 10, 95);
+  width: 10rem;
+  height: 6rem;
+  transform: translate3d(6rem, 12rem, 0) rotate(31deg);
+  z-index: 1;
+}
 art > u:nth-of-type(24) {
   background: transparent;
   width: 17rem;
@@ -684,8 +691,8 @@ art > u:nth-of-type(56) {
 art > u:nth-of-type(57) {
   background: linear-gradient(to right, white, rgb(191, 80, 22));
   width: 47rem;
-  height: 21rem;
-  transform: translate3d(42rem, 77rem, 0);
+  height: 19rem;
+  transform: translate3d(42rem, 79rem, 0);
   border-right: 1rem solid rgb(12, 5, 40);
   border-radius: 0 50% 50% 0;
   z-index: -2;
@@ -700,10 +707,19 @@ art > u:nth-of-type(58) {
   z-index: -2;
 }
 art > u:nth-of-type(59) {
+  background: linear-gradient(180deg, rgb(110, 112, 135), white);
+  width: 26rem;
+  height: 15rem;
+  transform: translate3d(54.2rem, 71.5rem, 0) rotate(-26deg) skewX(17deg);
+  border-bottom: 1rem solid rgb(12, 5, 40);
+  z-index: -2;
+}
+art > u:nth-of-type(60) {
   background: white;
   width: 34rem;
   height: 20rem;
   transform: translate3d(50rem, 59rem, 0);
   border-radius: 0 100% 0 0;
+  border-right: 1rem solid rgb(12, 5, 40);
   z-index: -2;
 }/*# sourceMappingURL=css-index.css.map */

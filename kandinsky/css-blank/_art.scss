@@ -329,6 +329,13 @@
       box-shadow: inset 8rem -0.5rem 0 3rem $brightblue, 
                   inset 1rem -0.5rem 0 3rem $brightblue;
       z-index: 1;
+      &:after {
+        background: $brightblue;
+        width: 10rem;
+        height: 6rem;
+        transform: translate3d(6rem, 12rem, 0) rotate(31deg);
+        z-index: 1;
+      }
     }
     > u:nth-of-type(24) {
       background: transparent;
@@ -658,8 +665,8 @@
     > u:nth-of-type(57) {
       background: linear-gradient(to right, white, $goldmid);
       width: 47rem;
-      height: 21rem;
-      transform: translate3d(42rem, 77rem, 0);
+      height: 19rem;
+      transform: translate3d(42rem, 79rem, 0);
       border-right: 1rem solid $darkblue;
       border-radius: 0 50% 50% 0;
       z-index: -2;
@@ -674,11 +681,20 @@
       z-index: -2;
     }
     > u:nth-of-type(59) {
+      background: linear-gradient(180deg, $lightgray, white);
+      width: 26rem;
+      height: 15rem;
+      transform: translate3d(54.2rem, 71.5rem, 0) rotate(-26deg) skewX(17deg);
+      border-bottom: 1rem solid $darkblue;
+      z-index: -2;
+    }
+    > u:nth-of-type(60) {
       background: white;
       width: 34rem;
       height: 20rem;
       transform: translate3d(50rem, 59rem, 0);
       border-radius: 0 100% 0 0;
+      border-right: 1rem solid $darkblue;
       z-index: -2;
     }
 
