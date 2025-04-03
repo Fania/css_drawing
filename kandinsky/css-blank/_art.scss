@@ -284,14 +284,14 @@
       transform: translate3d(32.7rem, 43.2rem, 0) rotate(35deg) scale(0.8);
       z-index: 3;
     }
-    g > u:nth-of-type(1) {
+    g:nth-of-type(1) > u:nth-of-type(1) {
       background: $maroon;
       width: 3rem;
       height: 12rem;
       transform: translate3d(0rem, 0rem, 0) skewX(10deg);
       z-index: 1;
     }
-    g > u:nth-of-type(2) {
+    g:nth-of-type(1) > u:nth-of-type(2) {
       background: $maroon;
       width: 6rem;
       height: 16rem;
@@ -452,7 +452,7 @@
       transform: translate3d(50.5rem, 63rem, 0) rotate(27deg) skewX(68deg);
       border-radius: 0 0 0 100%;
       border: 1rem solid $darkblue;
-      z-index: 1;
+      z-index: 2;
     }
     > u:nth-of-type(36) {
       background: $lightblue;
@@ -644,7 +644,7 @@
       transform: translate3d(73rem, 75rem, 0);
       border: 1rem solid $darkblue;
       border-radius: 50%;
-      z-index: 1;
+      z-index: -2;
     }
     > u:nth-of-type(56) {
       background: $lightblue;
@@ -653,7 +653,7 @@
       transform: translate3d(75rem, 79rem, 0);
       border: 1rem solid $darkblue;
       border-radius: 50%;
-      z-index: 1;
+      z-index: -2;
     }
     > u:nth-of-type(57) {
       background: linear-gradient(to right, white, $goldmid);
@@ -662,9 +662,27 @@
       transform: translate3d(42rem, 77rem, 0);
       border-right: 1rem solid $darkblue;
       border-radius: 0 50% 50% 0;
-      z-index: 1;
+      z-index: -2;
+    }
+    > u:nth-of-type(58) {
+      background: $gray;
+      width: 20rem;
+      height: 20rem;
+      transform: translate3d(67rem, 67rem, 0);
+      border: 1.5rem solid $darkblue;
+      border-radius: 50%;
+      z-index: -2;
+    }
+    > u:nth-of-type(59) {
+      background: white;
+      width: 34rem;
+      height: 20rem;
+      transform: translate3d(50rem, 59rem, 0);
+      border-radius: 0 100% 0 0;
+      z-index: -2;
     }
 
+    
 
 
 

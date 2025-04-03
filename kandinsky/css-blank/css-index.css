@@ -311,14 +311,14 @@ art g:nth-of-type(1) {
   transform: translate3d(32.7rem, 43.2rem, 0) rotate(35deg) scale(0.8);
   z-index: 3;
 }
-art g > u:nth-of-type(1) {
+art g:nth-of-type(1) > u:nth-of-type(1) {
   background: rgb(123, 0, 15);
   width: 3rem;
   height: 12rem;
   transform: translate3d(0rem, 0rem, 0) skewX(10deg);
   z-index: 1;
 }
-art g > u:nth-of-type(2) {
+art g:nth-of-type(1) > u:nth-of-type(2) {
   background: rgb(123, 0, 15);
   width: 6rem;
   height: 16rem;
@@ -478,7 +478,7 @@ art > u:nth-of-type(35) {
   transform: translate3d(50.5rem, 63rem, 0) rotate(27deg) skewX(68deg);
   border-radius: 0 0 0 100%;
   border: 1rem solid rgb(12, 5, 40);
-  z-index: 1;
+  z-index: 2;
 }
 art > u:nth-of-type(36) {
   background: rgb(42, 79, 138);
@@ -670,7 +670,7 @@ art > u:nth-of-type(55) {
   transform: translate3d(73rem, 75rem, 0);
   border: 1rem solid rgb(12, 5, 40);
   border-radius: 50%;
-  z-index: 1;
+  z-index: -2;
 }
 art > u:nth-of-type(56) {
   background: rgb(42, 79, 138);
@@ -679,7 +679,7 @@ art > u:nth-of-type(56) {
   transform: translate3d(75rem, 79rem, 0);
   border: 1rem solid rgb(12, 5, 40);
   border-radius: 50%;
-  z-index: 1;
+  z-index: -2;
 }
 art > u:nth-of-type(57) {
   background: linear-gradient(to right, white, rgb(191, 80, 22));
@@ -688,5 +688,22 @@ art > u:nth-of-type(57) {
   transform: translate3d(42rem, 77rem, 0);
   border-right: 1rem solid rgb(12, 5, 40);
   border-radius: 0 50% 50% 0;
-  z-index: 1;
+  z-index: -2;
+}
+art > u:nth-of-type(58) {
+  background: rgb(28, 28, 45);
+  width: 20rem;
+  height: 20rem;
+  transform: translate3d(67rem, 67rem, 0);
+  border: 1.5rem solid rgb(12, 5, 40);
+  border-radius: 50%;
+  z-index: -2;
+}
+art > u:nth-of-type(59) {
+  background: white;
+  width: 34rem;
+  height: 20rem;
+  transform: translate3d(50rem, 59rem, 0);
+  border-radius: 0 100% 0 0;
+  z-index: -2;
 }/*# sourceMappingURL=css-index.css.map */
