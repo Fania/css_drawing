@@ -214,6 +214,7 @@ art > u:nth-of-type(11) {
   transform: translate3d(32rem, 29rem, 0) rotate(70deg) skewX(15deg);
   border-radius: 50%;
   border: 1rem solid rgb(12, 5, 40);
+  animation: 3s infinite alternate rowHead;
   z-index: 3;
 }
 art > u:nth-of-type(12) {
@@ -222,6 +223,7 @@ art > u:nth-of-type(12) {
   height: 18rem;
   transform: translate3d(34rem, 33rem, 0) rotate(-20deg) skewX(10deg);
   border-radius: 80% 0 0 100%;
+  animation: 3s infinite alternate rowBody;
   z-index: 3;
 }
 art > u:nth-of-type(13) {
@@ -303,14 +305,14 @@ art g:nth-of-type(1) {
   transform: translate3d(32.7rem, 43.2rem, 0) rotate(35deg) scale(0.8);
   z-index: 3;
 }
-art g:nth-of-type(1) > u:nth-of-type(1) {
+art g:nth-of-type(1) > z:nth-of-type(1) {
   background: rgb(123, 0, 15);
   width: 3rem;
   height: 12rem;
   transform: translate3d(0rem, 0rem, 0) skewX(10deg);
   z-index: 1;
 }
-art g:nth-of-type(1) > u:nth-of-type(2) {
+art g:nth-of-type(1) > z:nth-of-type(2) {
   background: rgb(123, 0, 15);
   width: 6rem;
   height: 16rem;
@@ -325,6 +327,7 @@ art > u:nth-of-type(21) {
   transform: translate3d(7.5rem, 52rem, 0) rotate(-37deg) skewX(-20deg);
   border-radius: 20% 0 100% 50%;
   box-shadow: 0 0 1rem 0.5rem rgb(12, 5, 40);
+  animation: 3s infinite alternate rowPedal;
   z-index: 999;
 }
 art > u:nth-of-type(22) {
@@ -335,6 +338,7 @@ art > u:nth-of-type(22) {
   border-left: 4rem solid transparent;
   transform: translate3d(-2.5rem, 57rem, 0) rotate(-27deg) skewX(0deg);
   border-radius: 0 0 100% 0;
+  animation: 3s infinite alternate rowPedalBack;
   z-index: 1;
 }
 art > u:nth-of-type(23) {
@@ -863,4 +867,24 @@ art > u:nth-of-type(73):after {
   border-radius: 50%;
   border-left: 1rem solid rgb(12, 5, 40);
   z-index: -1;
+}
+@keyframes rowHead {
+  to {
+    transform: translate3d(42rem, 31rem, 0) rotate(85deg) skewX(15deg);
+  }
+}
+@keyframes rowBody {
+  to {
+    transform: translate3d(34rem, 33rem, 0) rotate(50deg) skewX(10deg);
+  }
+}
+@keyframes rowPedal {
+  to {
+    transform: translate3d(24.5rem, 59rem, 0) rotate(-110deg) skewX(-20deg);
+  }
+}
+@keyframes rowPedalBack {
+  to {
+    transform: translate3d(24.5rem, 64rem, 0) rotate(-110deg) skewX(-20deg);
+  }
 }/*# sourceMappingURL=css-index.css.map */
