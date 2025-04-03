@@ -713,15 +713,77 @@
       filter: blur(15px);
       z-index: -2;
     }
-    // > u:nth-of-type(62) {
-    //   background: ;
-    //   width: 34rem;
-    //   height: 36rem;
-    //   transform: translate3d(-8rem, 38rem, 0) rotate(-45deg);
-    //   filter: blur(15px);
-    //   z-index: -2;
-    // }
-
+    > u:nth-of-type(62) {
+      background: linear-gradient(to bottom, $lightgray, $gray, $lightteal, $brightblue);
+      width: 4.5rem;
+      height: 23rem;
+      transform: translate3d(13rem, 62rem, 0) rotate(47deg);
+      border-radius: 0 100% 10% 0;
+      border: 1rem solid $darkblue;
+      z-index: 1;
+      &:after {
+        background: $offwhite;
+        width: 1rem;
+        height: 10rem;
+        transform: translate3d(0rem, 13rem, 0) rotate(0deg);
+        z-index: 1;
+        filter: blur(3px);
+        z-index: 1;
+      }
+    }
+    > u:nth-of-type(63) {
+      background: linear-gradient(to bottom, $lightgray, $lightteal);
+      width: 3rem;
+      height: 15rem;
+      transform: translate3d(21rem, 69rem, 0) rotate(42deg);
+      border-radius: 0 100% 0 0;
+      border: 1rem solid $darkblue;
+      border-bottom: 0;
+      z-index: 1;
+    }
+    > u:nth-of-type(64) {
+      background: $lightteal;
+      width: 3rem;
+      height: 9rem;
+      transform: translate3d(16rem, 82rem, 0) rotate(36deg);
+      border-radius: 50%;
+      z-index: 1;
+    }
+    > u:nth-of-type(65) {
+      background: linear-gradient(to top, $lightteal, $darkblue);
+      width: 11rem;
+      height: 13.5rem;
+      transform: translate3d(9.2rem, 71.2rem, 0) skewX(-5deg);
+      z-index: -1;
+      border-radius: 100% 0 0 0;
+    }
+    > u:nth-of-type(66) {
+      background: transparent;
+      width: 19rem;
+      height: 1rem;
+      transform: translate3d(11.8rem, 71rem, 0) rotate(22deg);
+      border-top: 1rem solid $darkblue;
+      border-radius: 80%;
+      z-index: 1;
+    }
+    > u:nth-of-type(67) {
+      background: transparent;
+      width: 35rem;
+      height: 1rem;
+      transform: translate3d(0rem, 80rem, 0) rotate(5deg);
+      border-top: 1rem solid $darkblue;
+      border-radius: 80%;
+      z-index: 1;
+    }
+    > u:nth-of-type(68) {
+      background: transparent;
+      width: 31rem;
+      height: 1rem;
+      transform: translate3d(2rem, 83rem, 0) rotate(9deg);
+      border-top: 1rem solid $darkblue;
+      border-radius: 80%;
+      z-index: 1;
+    }
     
 
 
