@@ -720,6 +720,7 @@
       transform: translate3d(13rem, 62rem, 0) rotate(47deg);
       border-radius: 0 100% 10% 0;
       border: 1rem solid $darkblue;
+      // animation: 5s infinite alternate fishTopLip;
       z-index: 1;
       &:after {
         background: $offwhite;
@@ -739,6 +740,7 @@
       border-radius: 0 100% 0 0;
       border: 1rem solid $darkblue;
       border-bottom: 0;
+      animation: 5s infinite alternate fishBottomLip;
       z-index: 1;
     }
     > u:nth-of-type(64) {
@@ -858,20 +860,25 @@
     }
     @keyframes rowPedal { // 21
       to {
-      // translate3d(7.5rem, 52rem, 0) rotate(-37deg) skewX(-20deg);
         transform: translate3d(24.5rem, 59rem, 0) rotate(-110deg) skewX(-20deg);
       }
     }
     @keyframes rowPedalBack { // 22
       to {
-      // translate3d(-2.5rem, 57rem, 0) rotate(-27deg) skewX(0deg);
         transform: translate3d(24.5rem, 64rem, 0) rotate(-110deg) skewX(-20deg);
+      }
+    }
+
+
+    @keyframes fishBottomLip { // 63
+      to {
+        transform: translate3d(19rem, 69rem, 0) rotate(20deg);
       }
     }
 
 
 
 
-
+// animation: 3s infinite alternate rowPedal;
 
 }

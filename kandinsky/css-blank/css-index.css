@@ -763,6 +763,7 @@ art > u:nth-of-type(63) {
   border-radius: 0 100% 0 0;
   border: 1rem solid rgb(12, 5, 40);
   border-bottom: 0;
+  animation: 5s infinite alternate fishBottomLip;
   z-index: 1;
 }
 art > u:nth-of-type(64) {
@@ -886,5 +887,10 @@ art > u:nth-of-type(73):after {
 @keyframes rowPedalBack {
   to {
     transform: translate3d(24.5rem, 64rem, 0) rotate(-110deg) skewX(-20deg);
+  }
+}
+@keyframes fishBottomLip {
+  to {
+    transform: translate3d(19rem, 69rem, 0) rotate(20deg);
   }
 }/*# sourceMappingURL=css-index.css.map */
