@@ -360,6 +360,7 @@
       border-top: 1rem solid black;
       border-left: 1rem solid black;
       box-shadow: 0 0 1rem 0.5rem rgba(0,0,0,0.5);
+      animation: 1s infinite alternate linear sail;
       z-index: 2;
     }
     > u:nth-of-type(26) {
@@ -368,7 +369,9 @@
       height: 20rem;
       transform: translate3d(53rem, 24rem, 0);
       border-radius: 50%;
-      z-index: 1;
+      animation: 60s infinite normal linear sun;
+      // animation-delay: 10s;
+      z-index: -4;
     }
     > x:nth-of-type(9) {
       background: transparent;
@@ -377,7 +380,9 @@
       transform: translate3d(53rem, 24rem, 0);
       border-radius: 50%;
       box-shadow: inset 0 -3rem 4rem 1rem white;
-      z-index: 1;
+      animation: 60s infinite normal linear sunOverlay;
+      // animation-delay: 10s;
+      z-index: -4;
     }
     > u:nth-of-type(27) {
       background: $goldlight;
@@ -876,6 +881,53 @@
       }
     }
 
+
+    @keyframes sun { // 26
+      0% {
+        transform: translate3d(31rem, 49rem, 0);
+        background: $brightred;
+      }
+      25% {
+        transform: translate3d(53rem, 24rem, 0);
+        background: $brightred;
+      }
+      50% {
+        transform: translate3d(62rem, 17rem, 0);
+        background: $golddark;
+      }
+      75% {
+        transform: translate3d(75rem, 8rem, 0);
+        background: $goldlight;
+      }
+      100% {
+        transform: translate3d(95rem, 0rem, 0);
+        background: $goldlight;
+      }
+    }
+    @keyframes sunOverlay { // 26
+      0% {
+        transform: translate3d(31rem, 49rem, 0);
+      }
+      25% {
+        transform: translate3d(53rem, 24rem, 0);
+      }
+      50% {
+        transform: translate3d(62rem, 17rem, 0);
+      }
+      75% {
+        transform: translate3d(75rem, 8rem, 0);
+      }
+      100% {
+        transform: translate3d(95rem, 0rem, 0);
+      }
+    }
+
+
+    @keyframes sail { // 25
+      to {
+        background: linear-gradient(315deg, $offwhite 5%, $goldlight 15%, $offwhite 30% 55%, $goldlight 70%);
+      }
+    }
 
 
 

@@ -384,6 +384,7 @@ art > u:nth-of-type(25) {
   border-top: 1rem solid black;
   border-left: 1rem solid black;
   box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.5);
+  animation: 1s infinite alternate linear sail;
   z-index: 2;
 }
 art > u:nth-of-type(26) {
@@ -392,7 +393,8 @@ art > u:nth-of-type(26) {
   height: 20rem;
   transform: translate3d(53rem, 24rem, 0);
   border-radius: 50%;
-  z-index: 1;
+  animation: 60s infinite normal linear sun;
+  z-index: -4;
 }
 art > x:nth-of-type(9) {
   background: transparent;
@@ -401,7 +403,8 @@ art > x:nth-of-type(9) {
   transform: translate3d(53rem, 24rem, 0);
   border-radius: 50%;
   box-shadow: inset 0 -3rem 4rem 1rem white;
-  z-index: 1;
+  animation: 60s infinite normal linear sunOverlay;
+  z-index: -4;
 }
 art > u:nth-of-type(27) {
   background: rgb(223, 117, 20);
@@ -892,5 +895,49 @@ art > u:nth-of-type(73):after {
 @keyframes fishBottomLip {
   to {
     transform: translate3d(19rem, 69rem, 0) rotate(20deg);
+  }
+}
+@keyframes sun {
+  0% {
+    transform: translate3d(31rem, 49rem, 0);
+    background: rgb(202, 0, 14);
+  }
+  25% {
+    transform: translate3d(53rem, 24rem, 0);
+    background: rgb(202, 0, 14);
+  }
+  50% {
+    transform: translate3d(62rem, 17rem, 0);
+    background: rgb(192, 44, 16);
+  }
+  75% {
+    transform: translate3d(75rem, 8rem, 0);
+    background: rgb(223, 117, 20);
+  }
+  100% {
+    transform: translate3d(95rem, 0rem, 0);
+    background: rgb(223, 117, 20);
+  }
+}
+@keyframes sunOverlay {
+  0% {
+    transform: translate3d(31rem, 49rem, 0);
+  }
+  25% {
+    transform: translate3d(53rem, 24rem, 0);
+  }
+  50% {
+    transform: translate3d(62rem, 17rem, 0);
+  }
+  75% {
+    transform: translate3d(75rem, 8rem, 0);
+  }
+  100% {
+    transform: translate3d(95rem, 0rem, 0);
+  }
+}
+@keyframes sail {
+  to {
+    background: linear-gradient(315deg, rgb(233, 187, 106) 5%, rgb(223, 117, 20) 15%, rgb(233, 187, 106) 30% 55%, rgb(223, 117, 20) 70%);
   }
 }/*# sourceMappingURL=css-index.css.map */

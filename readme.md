@@ -27,3 +27,10 @@ rower group:
 fish group:
 62 - 71
 
+
+sun: 26
+
+moon: 27
+
+sail: 25
+
