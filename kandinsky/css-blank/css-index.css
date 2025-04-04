@@ -23,6 +23,20 @@ body > div *, body > div *:before, body > div *:after, body > div:before, body >
   transform-style: preserve-3d;
 }
 
+video {
+  width: 95rem;
+  aspect-ratio: 1/1;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
 art {
   width: 95rem;
   aspect-ratio: 1/1;
@@ -412,6 +426,7 @@ art > u:nth-of-type(27) {
   transform: translate3d(71.5rem, 24rem, 0);
   border-radius: 50%;
   box-shadow: inset 0rem 0rem 0 3.7rem rgb(26, 78, 109);
+  animation: 45s infinite normal linear moon;
   z-index: 1;
 }
 art > u:nth-of-type(28) {
@@ -945,5 +960,32 @@ art > u:nth-of-type(74) {
 @keyframes sail {
   to {
     background: linear-gradient(315deg, rgb(233, 187, 106) 5%, rgb(223, 117, 20) 15%, rgb(233, 187, 106) 30% 55%, rgb(223, 117, 20) 70%);
+  }
+}
+@keyframes moon {
+  0% {
+    transform: translate3d(95.5rem, 36rem, 0);
+    background: rgb(223, 117, 20);
+    box-shadow: inset 0rem 0rem 0 3.7rem rgb(26, 78, 109);
+  }
+  25% {
+    transform: translate3d(71.5rem, 24rem, 0);
+    background: rgb(223, 117, 20);
+    box-shadow: inset 0rem 0rem 0 4rem rgb(26, 78, 109);
+  }
+  50% {
+    transform: translate3d(54.5rem, 9rem, 0);
+    background: rgb(223, 117, 20);
+    box-shadow: inset 0rem 0rem 0 4.5rem rgb(26, 78, 109);
+  }
+  75% {
+    transform: translate3d(28.5rem, -2rem, 0);
+    background: rgb(223, 117, 20);
+    box-shadow: inset 0rem 0rem 0 5rem rgb(26, 78, 109);
+  }
+  100% {
+    transform: translate3d(10.5rem, -17rem, 0);
+    background: rgb(223, 117, 20);
+    box-shadow: inset 0rem 0rem 0 5.5rem rgb(26, 78, 109);
   }
 }/*# sourceMappingURL=css-index.css.map */

@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-console.log('hello');
+// console.log('hello');
 
 const us = document.querySelectorAll('u');
 const xs = document.querySelectorAll('x');
@@ -13,22 +13,151 @@ const zs = document.querySelectorAll('z');
 // u 11, 12, 21, 22, 25, 26, 63
 // x 9
 const anims = [us[10],us[11],us[20],us[21],us[24],us[25],us[62],xs[8]];
-console.log(anims);
+// console.log(anims);
 
 const rower = [us[10],us[11],us[20],us[21],us[23]];
-console.log(rower[0].style.animationPlayState == 'running');
+// console.log(rower[0].style.animationPlayState == 'running');
 
 
-document.addEventListener("click", () => {
-  anims.forEach(anim => {
-    console.log(anim.style.animationPlayState);
-    if(anim.style.animationPlayState == 'paused') {
-      anim.style.animationPlayState = 'running';
-    } else {
-      anim.style.animationPlayState = 'paused';
+// document.addEventListener("click", () => {
+//   anims.forEach(anim => {
+//     // console.log(anim.style.animationPlayState);
+//     if(anim.style.animationPlayState == 'paused') {
+//       anim.style.animationPlayState = 'running';
+//     } else {
+//       anim.style.animationPlayState = 'paused';
+//     }
+//   });
+// });
+
+
+
+
+
+
+
+
+// Copyright 2023 The MediaPipe Authors.
+// https://codepen.io/mediapipe-preview/pen/vYrWvNg?editors=0110
+import { ObjectDetector, FilesetResolver } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.2";
+let objectDetector;
+// Initialize the object detector
+const initializeObjectDetector = async () => {
+    console.log('starting up Object Detector');
+    const vision = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.2/wasm");
+    objectDetector = await ObjectDetector.createFromOptions(vision, {
+        baseOptions: {
+            modelAssetPath: `https://storage.googleapis.com/mediapipe-models/object_detector/efficientdet_lite0/float16/1/efficientdet_lite0.tflite`,
+            delegate: "GPU"
+        },
+        scoreThreshold: 0.5,
+        category_allowlist: [],
+        runningMode: "VIDEO"
+    });
+};
+initializeObjectDetector();
+let video = document.getElementById("webcam");
+function hasGetUserMedia() {
+    return !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+}
+// Keep a reference of all the child elements we create
+// so we can remove them easilly on each render.
+// var children = [];
+if (hasGetUserMedia()) {
+    enableCam();
+}
+else {
+    console.warn("getUserMedia() is not supported by your browser");
+}
+// Enable the live webcam view and start detection.
+async function enableCam(event) {
+    if (!objectDetector) {
+        console.log("Wait! objectDetector not loaded yet.");
+        return;
     }
-  });
-});
+    // getUsermedia parameters
+    const constraints = {
+        video: true
+    };
+    // Activate the webcam stream.
+    navigator.mediaDevices
+        .getUserMedia(constraints)
+        .then(function (stream) {
+        video.srcObject = stream;
+        video.addEventListener("loadeddata", predictWebcam);
+    })
+        .catch((err) => {
+        console.error(err);
+        /* handle the error */
+    });
+}
+let lastVideoTime = -1;
+async function predictWebcam() {
+    console.log('inside predictWebcam');
+    let startTimeMs = performance.now();
+    // Detect objects using detectForVideo.
+    if (video.currentTime !== lastVideoTime) {
+        lastVideoTime = video.currentTime;
+        const detections = objectDetector.detectForVideo(video, startTimeMs);
+        displayVideoDetections(detections);
+        console.log('should at least print this?');
+    }
+    // Call this function again to keep predicting when the browser is ready.
+    window.requestAnimationFrame(predictWebcam);
+}
+function displayVideoDetections(result) {
+    // Remove any highlighting from previous frame.
+    // for (let child of children) {
+    //     liveView.removeChild(child);
+    // }
+    // children.splice(0);
+    // Iterate through predictions and draw them to the live view
+    for (let detection of result.detections) {
+        // const p = document.createElement("p");
+        const prediction = 
+            detection.categories[0].categoryName +
+                " - with " +
+                Math.round(parseFloat(detection.categories[0].score) * 100) +
+                "% confidence.";
+        // p.style =
+        //     "left: " +
+        //         (video.offsetWidth -
+        //             detection.boundingBox.width -
+        //             detection.boundingBox.originX) +
+        //         "px;" +
+        //         "top: " +
+        //         detection.boundingBox.originY +
+        //         "px; " +
+        //         "width: " +
+        //         (detection.boundingBox.width - 10) +
+        //         "px;";
+        // const highlighter = document.createElement("div");
+        // highlighter.setAttribute("class", "highlighter");
+        // highlighter.style =
+        //     "left: " +
+        //         (video.offsetWidth -
+        //             detection.boundingBox.width -
+        //             detection.boundingBox.originX) +
+        //         "px;" +
+        //         "top: " +
+        //         detection.boundingBox.originY +
+        //         "px;" +
+        //         "width: " +
+        //         (detection.boundingBox.width - 10) +
+        //         "px;" +
+        //         "height: " +
+        //         detection.boundingBox.height +
+        //         "px;";
+
+        // liveView.appendChild(highlighter);
+        // liveView.appendChild(p);
+        // // Store drawn objects in memory so they are queued to delete at next call.
+        // children.push(highlighter);
+        // children.push(p);
+
+        console.log(prediction);
+    }
+}
 
 
 
@@ -36,27 +165,24 @@ document.addEventListener("click", () => {
 
 
 
-
-
-
-// const { closeSync } = require("fs");
-
-// let fawn_canvas = document.getElementById('fawn_canvas');
-// let fawn_stream = document.getElementById('fawn_stream');
-// let fawn_svg = document.getElementById('fawn_svg');
-// let fctx = fawn_canvas.getContext('2d');
-// let cx,cy;
-// let lastHandPosX,lastHandPosY;
-// let currHandElem;
-// let fawn_svg_box = document.getElementById('fawn_svg').getBoundingClientRect();
 
 
 
 // function startMotion() {
-//   fawn_camera.start();
+//   // console.trace(`start Motiontracking ${motionState}`);
+//   // console.log(fawn_svg.offsetWidth, fawn_svg.offsetHeight);
+//   // console.dir(fawn_svg);
+//   const currentPage = getCurrentPage();
+//   if(currentPage==='fawn') {
+//     fawn_camera.start();
+//   } else {
+//     mandrill_camera.start();
+//   }
 // }
 // function stopMotion() {
+//   // console.trace(`stop Motiontracking ${motionState}`);
 //   fawn_camera.stop();
+//   mandrill_camera.stop();
 // }
 
 
@@ -66,10 +192,11 @@ document.addEventListener("click", () => {
 // }
 
 // function drawHandPositions(handData) {
-//   const canvas = fawn_canvas;
-//   const stream = fawn_stream;
-//   const box = fawn_svg_box;
-//   const ctx = fctx;
+//   const currentPage = getCurrentPage();
+//   const canvas = currentPage==='fawn' ? fawn_canvas : mandrill_canvas;
+//   const stream = currentPage==='fawn' ? fawn_stream : mandrill_stream;
+//   const box = currentPage==='fawn' ? fawn_svg_box : mandrill_svg_box;
+//   const ctx = currentPage==='fawn' ? fctx : mctx;
 
 //   canvas.width = stream.offsetWidth;
 //   canvas.height = stream.offsetHeight;
@@ -112,8 +239,8 @@ document.addEventListener("click", () => {
 //       if(currHandElem && currHandElem !== null) {
 //         if(currHandElem.tagName === 'path') {
 //           // handleSolids(currHandElem);
-//           console.log(currHandElem);
-//           // handleColourReplacement(currHandElem);
+//           // console.log(currHandElem);
+//           handleColourReplacement(currHandElem);
 //         }
 //       }
 //     }

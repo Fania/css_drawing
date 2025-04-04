@@ -1,4 +1,23 @@
-﻿art {
+﻿video {
+    width: 95rem;
+    aspect-ratio: 1/1;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: .5rem;
+    overflow: hidden;
+    // clear: both;
+    display: block;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    // z-index: 999;
+}
+
+
+art {
+    // opacity: 0.5;
+
     // box-shadow: 0 1rem 1rem rgba($blk,.3);
     width: 95rem;
     // width: 150rem;
@@ -7,7 +26,6 @@
     bottom: 0;
     margin: auto;
     border-radius: .5rem;
-    // background: white;
     background: #eef;
     overflow: hidden;
     > u:nth-of-type(1) {
@@ -393,6 +411,7 @@
       transform: translate3d(71.5rem, 24rem, 0);
       border-radius: 50%;
       box-shadow: inset 0rem 0rem 0 3.7rem $triangleblue;
+      animation: 45s infinite normal linear moon;
       z-index: 1;
     }
     > u:nth-of-type(28) {
@@ -957,6 +976,35 @@
     @keyframes sail { // 25
       to {
         background: linear-gradient(315deg, $offwhite 5%, $goldlight 15%, $offwhite 30% 55%, $goldlight 70%);
+      }
+    }
+
+
+    @keyframes moon { // 27
+      0% {
+        transform: translate3d(95.5rem, 36rem, 0);
+        background: $goldlight;
+        box-shadow: inset 0rem 0rem 0 3.7rem $triangleblue;
+      }
+      25% {
+        transform: translate3d(71.5rem, 24rem, 0);
+        background: $goldlight;
+        box-shadow: inset 0rem 0rem 0 4rem $triangleblue;
+      }
+      50% {
+        transform: translate3d(54.5rem, 9rem, 0);
+        background: $goldlight;
+        box-shadow: inset 0rem 0rem 0 4.5rem $triangleblue;
+      }
+      75% {
+        transform: translate3d(28.5rem, -2rem, 0);
+        background: $goldlight;
+        box-shadow: inset 0rem 0rem 0 5rem $triangleblue;
+      }
+      100% {
+        transform: translate3d(10.5rem, -17rem, 0);
+        background: $goldlight;
+        box-shadow: inset 0rem 0rem 0 5.5rem $triangleblue;
       }
     }
 
