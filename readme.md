@@ -34,6 +34,19 @@ moon: 27
 
 sail: 25
 
+person left head: 28
+person left body: 29
+person mid head: 30
+person mid hair: x10
+person mid body: 31
+person right head: 32
+person right body: 33
+person edge head: 47
+person edge arm top: 54
+person edge arm vert: 54 before
+person edge arm bottom: 54 after
+
+
 
 
 Issues:

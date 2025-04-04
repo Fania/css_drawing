@@ -10,9 +10,9 @@ const zs = document.querySelectorAll('z');
 // console.log(xs);
 // console.log(zs);
 
-// u 11, 12, 21, 22, 25, 26, 63
+// u 11, 12, 21, 22, 25, 26, 27, 63
 // x 9
-const anims = [us[10],us[11],us[20],us[21],us[24],us[25],us[62],xs[8]];
+const anims = [us[10],us[11],us[20],us[21],us[24],us[25],us[26], us[62],xs[8]];
 // console.log(anims);
 
 const rower = [us[10],us[11],us[20],us[21],us[23]];
