@@ -878,12 +878,6 @@ art > u:nth-of-type(74) {
   transform: translate3d(59.5rem, 84.5rem, 0) rotate(-25deg);
   z-index: 1;
 }
-art > u, art x, art z,
-art u:after, art u:before,
-art x:before, art x:after,
-art z:before, art z:after {
-  animation: none !important;
-}
 @keyframes rowHead {
   to {
     transform: translate3d(42rem, 31rem, 0) rotate(85deg) skewX(15deg);

@@ -876,16 +876,12 @@
     // }
 
     // no animations
-    > u,x,z,
-      u:after, u:before,
-      x:before, x:after,
-      z:before, z:after {
-      // background: transparent !important;
-      // border: 0.1rem solid black !important;
-      // box-shadow: none !important;
-      animation: none !important;
-      // filter: none !important;
-    }
+    // > u,x,z,
+    //   u:after, u:before,
+    //   x:before, x:after,
+    //   z:before, z:after {
+    //   animation: none !important;
+    // }
 
 
     @keyframes rowHead { // 11
