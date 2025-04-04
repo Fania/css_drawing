@@ -441,6 +441,7 @@ art {
       transform: translate3d(57.7rem, 40rem, 0) rotate(30deg);
       border-radius: 50%;
       border: 0.7rem solid black;
+      animation: 0.5s infinite alternate midGalHead;
       z-index: 2;
     }
     > x:nth-of-type(10) {
@@ -449,6 +450,7 @@ art {
       height: 8rem;
       transform: translate3d(54.8rem, 41.5rem, 0);
       border-radius: 100% 0 0 0;
+      animation: 0.5s infinite alternate midGalHair;
       z-index: -1;
     }
     > u:nth-of-type(31) {
@@ -459,6 +461,7 @@ art {
       border-radius: 0 70% 10% 0;
       border-top: 1rem solid black;
       box-shadow: 0 0 1rem 0.5rem $brightblue;
+      animation: 0.5s infinite alternate midGalBody;
       z-index: 1;
     }
     > u:nth-of-type(32) {
@@ -1050,6 +1053,32 @@ art {
       }
     }
 
+
+
+    @keyframes midGalHead { // 30
+      0% {
+        transform: translate3d(57.7rem, 40rem, 0) rotate(30deg);
+      }
+      100% {
+        transform: translate3d(59.7rem, 38rem, 0) rotate(30deg);
+      }
+    }
+    @keyframes midGalHair { // x10
+      0% {
+        transform: translate3d(54.8rem, 41.5rem, 0);
+      }
+      100% {
+        transform: translate3d(56rem, 38rem, 0) rotate(30deg);
+      }
+    }
+    @keyframes midGalBody { // 31
+      0% {
+        transform: translate3d(57.5rem, 45rem, 0) rotate(5deg);
+      }
+      100% {
+        transform: translate3d(57.5rem, 42rem, 0) rotate(20deg);
+      }
+    }
 
 // animation: 3s infinite alternate rowPedal;
 
