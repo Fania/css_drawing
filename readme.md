@@ -42,9 +42,7 @@ person mid body: 31
 person right head: 32
 person right body: 33
 person edge head: 47
-person edge arm top: 54
-person edge arm vert: 54 before
-person edge arm bottom: 54 after
+person edge arms: 54
 
 
 

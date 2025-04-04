@@ -595,6 +595,7 @@ art {
       transform: translate3d(84.8rem, 60rem, 0) rotate(30deg);
       border: 0.5rem solid $darkblue;
       border-radius: 50%;
+      animation: 10s infinite alternate edgeGuyHead;
       z-index: 1;
     }
     > u:nth-of-type(48) {
@@ -658,6 +659,7 @@ art {
       transform: translate3d(85rem, 57rem, 0) rotate(33deg);
       border-bottom: 1rem solid $darkblue;
       border-radius: 50%;
+      animation: 5s infinite alternate edgeGuyArms;
       z-index: 1;
       &:after {
         width: 11rem;
@@ -1005,6 +1007,18 @@ art {
         transform: translate3d(10.5rem, -17rem, 0);
         background: $goldlight;
         box-shadow: inset 0rem 0rem 0 9rem $triangleblue;
+      }
+    }
+
+
+    @keyframes edgeGuyHead { // 47
+      to {
+        transform: translate3d(84.8rem, 60rem, 0) rotate(-35deg);
+      }
+    }
+    @keyframes edgeGuyArms { // 54
+      to {
+        transform: translate3d(79rem, 54rem, 0) rotate(-49deg);
       }
     }
 
