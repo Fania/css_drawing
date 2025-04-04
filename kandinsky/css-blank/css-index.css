@@ -436,6 +436,7 @@ art > u:nth-of-type(28) {
   transform: translate3d(51.1rem, 41.7rem, 0);
   border-radius: 50%;
   border: 0.7rem solid black;
+  animation: 20s infinite alternate leftGuyHead;
   z-index: 2;
 }
 art > u:nth-of-type(29) {
@@ -445,7 +446,8 @@ art > u:nth-of-type(29) {
   transform: translate3d(52.5rem, 44rem, 0);
   border-radius: 0 70% 10% 0;
   box-shadow: 0 0 0.2rem 0.2rem rgb(16, 10, 95);
-  z-index: 1;
+  animation: 20s infinite alternate leftGuyBody;
+  z-index: 2;
 }
 art > u:nth-of-type(30) {
   background: rgb(227, 186, 185);
@@ -999,5 +1001,27 @@ art > u:nth-of-type(74) {
 @keyframes edgeGuyArms {
   to {
     transform: translate3d(79rem, 54rem, 0) rotate(-49deg);
+  }
+}
+@keyframes leftGuyHead {
+  0% {
+    transform: translate3d(51.1rem, 41.7rem, 0);
+  }
+  50% {
+    transform: translate3d(50.5rem, 37rem, 0) rotate(7deg);
+  }
+  100% {
+    transform: translate3d(46.1rem, 36.7rem, 0) rotate(31deg);
+  }
+}
+@keyframes leftGuyBody {
+  0% {
+    transform: translate3d(52.5rem, 44rem, 0);
+  }
+  50% {
+    transform: translate3d(48.5rem, 41rem, 0) rotate(25deg);
+  }
+  100% {
+    transform: translate3d(42.5rem, 40rem, 0) rotate(41deg);
   }
 }/*# sourceMappingURL=css-index.css.map */
