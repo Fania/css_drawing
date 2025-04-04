@@ -1,6 +1,7 @@
 ﻿art {
-    box-shadow: 0 1rem 1rem rgba($blk,.3);
+    // box-shadow: 0 1rem 1rem rgba($blk,.3);
     width: 95rem;
+    // width: 150rem;
     aspect-ratio: 1/1;
     right: 0;
     bottom: 0;
@@ -874,17 +875,17 @@
     //   filter: none !important;
     // }
 
-    // only outlines
-    // > u,x,z,
-    //   u:after, u:before,
-    //   x:before, x:after,
-    //   z:before, z:after {
-    //   background: transparent !important;
-    //   border: 0.1rem solid black !important;
-    //   box-shadow: none !important;
-    //   animation: none !important;
-    //   filter: none !important;
-    // }
+    // no animations
+    > u,x,z,
+      u:after, u:before,
+      x:before, x:after,
+      z:before, z:after {
+      // background: transparent !important;
+      // border: 0.1rem solid black !important;
+      // box-shadow: none !important;
+      animation: none !important;
+      // filter: none !important;
+    }
 
 
     @keyframes rowHead { // 11

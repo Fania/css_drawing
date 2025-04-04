@@ -12,7 +12,7 @@ body {
 }
 
 div {
-  background: linear-gradient(rgb(233, 187, 106), rgb(15, 35, 59));
+  background: #eef;
 }
 
 body > div *, body > div *:before, body > div *:after, body > div:before, body > div:after {
@@ -24,7 +24,6 @@ body > div *, body > div *:before, body > div *:after, body > div:before, body >
 }
 
 art {
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
   width: 95rem;
   aspect-ratio: 1/1;
   right: 0;
@@ -878,6 +877,12 @@ art > u:nth-of-type(74) {
   height: 1rem;
   transform: translate3d(59.5rem, 84.5rem, 0) rotate(-25deg);
   z-index: 1;
+}
+art > u, art x, art z,
+art u:after, art u:before,
+art x:before, art x:after,
+art z:before, art z:after {
+  animation: none !important;
 }
 @keyframes rowHead {
   to {
