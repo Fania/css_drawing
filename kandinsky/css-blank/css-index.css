@@ -486,6 +486,7 @@ art > u:nth-of-type(32) {
   transform: translate3d(62.7rem, 41rem, 0) rotate(50deg);
   border-radius: 50%;
   border: 0.7rem solid black;
+  animation: 10s infinite alternate rightGuyHead;
   z-index: 2;
 }
 art > u:nth-of-type(33) {
@@ -494,6 +495,7 @@ art > u:nth-of-type(33) {
   height: 12rem;
   transform: translate3d(59.5rem, 46rem, 0) rotate(20deg);
   border-radius: 0 100% 100% 0;
+  animation: 10s infinite alternate rightGuyBody;
   z-index: 2;
 }
 art > u:nth-of-type(34) {
@@ -1050,5 +1052,21 @@ art > u:nth-of-type(74) {
   }
   100% {
     transform: translate3d(57.5rem, 42rem, 0) rotate(20deg);
+  }
+}
+@keyframes rightGuyHead {
+  0% {
+    transform: translate3d(62.7rem, 41rem, 0) rotate(50deg);
+  }
+  100% {
+    transform: translate3d(70.7rem, 44rem, 0) rotate(10deg);
+  }
+}
+@keyframes rightGuyBody {
+  0% {
+    transform: translate3d(59.5rem, 46rem, 0) rotate(20deg);
+  }
+  100% {
+    transform: translate3d(68.5rem, 50rem, 0) rotate(20deg);
   }
 }/*# sourceMappingURL=css-index.css.map */

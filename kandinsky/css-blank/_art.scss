@@ -471,6 +471,7 @@ art {
       transform: translate3d(62.7rem, 41rem, 0) rotate(50deg);
       border-radius: 50%;
       border: 0.7rem solid black;
+      animation: 10s infinite alternate rightGuyHead;
       z-index: 2;
     }
     > u:nth-of-type(33) {
@@ -479,6 +480,7 @@ art {
       height: 12rem;
       transform: translate3d(59.5rem, 46rem, 0) rotate(20deg);
       border-radius: 0 100% 100% 0;
+      animation: 10s infinite alternate rightGuyBody;
       z-index: 2;
     }
     > u:nth-of-type(34) {
@@ -1080,6 +1082,22 @@ art {
       }
     }
 
-// animation: 3s infinite alternate rowPedal;
 
+
+    @keyframes rightGuyHead { // 32
+      0% {
+        transform: translate3d(62.7rem, 41rem, 0) rotate(50deg);
+      }
+      100% {
+        transform: translate3d(70.7rem, 44rem, 0) rotate(10deg);
+      }
+    }
+    @keyframes rightGuyBody { // 33
+      0% {
+        transform: translate3d(59.5rem, 46rem, 0) rotate(20deg);
+      }
+      100% {
+        transform: translate3d(68.5rem, 50rem, 0) rotate(20deg);
+      }
+    }
 }
