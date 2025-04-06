@@ -63,3 +63,10 @@ Issues:
 3
 4
 999
+
+
+
+10 animation blocks
+74 u blocks
+10 x blocks
+2 z blocks
