@@ -967,15 +967,15 @@
 
 
     @keyframes sail { // 25
-      // to {
-      //   background: linear-gradient(315deg, $offwhite 5%, $goldlight 15%, $offwhite 30% 55%, $goldlight 70%);
+      to {
+        background: linear-gradient(315deg, $offwhite 5%, $goldlight 15%, $offwhite 30% 55%, $goldlight 70%);
+      }
+      // 0% {
+      //   background-position: 0 0;
       // }
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 75% 50%;
-      }
+      // 100% {
+      //   background-position: 75% 50%;
+      // }
     }
 
 

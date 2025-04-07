@@ -963,11 +963,8 @@ art > u:nth-of-type(74) {
   }
 }
 @keyframes sail {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 75% 50%;
+  to {
+    background: linear-gradient(315deg, rgb(233, 187, 106) 5%, rgb(223, 117, 20) 15%, rgb(233, 187, 106) 30% 55%, rgb(223, 117, 20) 70%);
   }
 }
 @keyframes moon {
