@@ -23,7 +23,14 @@ $lightgray: rgb(110,112,135);
 $peach: rgb(176,77,99);
 
 
-
+:root {
+  color-scheme: only light;
+}
+@media screen {
+  :root {
+    color-scheme: only light;
+  }
+}
 
 html, body, div {
     height: 100%;
