@@ -23,20 +23,6 @@ body > div *, body > div *:before, body > div *:after, body > div:before, body >
   transform-style: preserve-3d;
 }
 
-video {
-  width: 95rem;
-  aspect-ratio: 1/1;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  display: block;
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-}
-
 art {
   width: 95rem;
   aspect-ratio: 1/1;
@@ -389,7 +375,7 @@ art > u:nth-of-type(24):after {
   z-index: 1;
 }
 art > u:nth-of-type(25) {
-  background: linear-gradient(135deg, rgb(233, 187, 106) 5%, rgb(223, 117, 20) 15%, rgb(233, 187, 106) 30% 55%, rgb(223, 117, 20) 70%);
+  background-image: linear-gradient(135deg, rgb(233, 187, 106) 5%, rgb(223, 117, 20) 15%, rgb(233, 187, 106) 30% 55%, rgb(223, 117, 20) 70%);
   width: 23rem;
   height: 40rem;
   transform: translate3d(38rem, 6rem, 0) rotate(-21deg) skewX(-8deg);
@@ -397,7 +383,8 @@ art > u:nth-of-type(25) {
   border-top: 1rem solid black;
   border-left: 1rem solid black;
   box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.5);
-  animation: 1s infinite alternate linear sail;
+  animation: sail 1s infinite;
+  animation-timing-function: ease-in-out;
   z-index: 2;
 }
 art > u:nth-of-type(26) {
@@ -967,8 +954,11 @@ art > u:nth-of-type(74) {
   }
 }
 @keyframes sail {
-  to {
-    background: linear-gradient(315deg, rgb(233, 187, 106) 5%, rgb(223, 117, 20) 15%, rgb(233, 187, 106) 30% 55%, rgb(223, 117, 20) 70%);
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 75% 50%;
   }
 }
 @keyframes moon {

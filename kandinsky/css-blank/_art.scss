@@ -1,26 +1,6 @@
-﻿video {
-    width: 95rem;
-    aspect-ratio: 1/1;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    border-radius: .5rem;
-    overflow: hidden;
-    // clear: both;
-    display: block;
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    // z-index: 999;
-}
-
-
-art {
-    // opacity: 0.5;
-
+﻿art {
     // box-shadow: 0 1rem 1rem rgba($blk,.3);
     width: 95rem;
-    // width: 150rem;
     aspect-ratio: 1/1;
     right: 0;
     bottom: 0;
@@ -372,7 +352,8 @@ art {
       } 
     }
     > u:nth-of-type(25) {
-      background: linear-gradient(135deg, $offwhite 5%, $goldlight 15%, $offwhite 30% 55%, $goldlight 70%);
+      // background: linear-gradient(135deg, $offwhite 5%, $goldlight 15%, $offwhite 30% 55%, $goldlight 70%);
+      background-image: linear-gradient(135deg, $offwhite 5%, $goldlight 15%, $offwhite 30% 55%, $goldlight 70%);
       width: 23rem;
       height: 40rem;
       transform: translate3d(38rem, 6rem, 0) rotate(-21deg) skewX(-8deg);
@@ -380,7 +361,10 @@ art {
       border-top: 1rem solid black;
       border-left: 1rem solid black;
       box-shadow: 0 0 1rem 0.5rem rgba(0,0,0,0.5);
-      animation: 1s infinite alternate linear sail;
+      // animation: 1s infinite alternate linear sail;
+      // animation: 1s infinite ease-in-out sail;
+      animation: sail 1s infinite;
+      animation-timing-function: ease-in-out;
       z-index: 2;
     }
     > u:nth-of-type(26) {
@@ -983,8 +967,14 @@ art {
 
 
     @keyframes sail { // 25
-      to {
-        background: linear-gradient(315deg, $offwhite 5%, $goldlight 15%, $offwhite 30% 55%, $goldlight 70%);
+      // to {
+      //   background: linear-gradient(315deg, $offwhite 5%, $goldlight 15%, $offwhite 30% 55%, $goldlight 70%);
+      // }
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 75% 50%;
       }
     }
 
